@@ -23,8 +23,8 @@ A production-style Retrieval-Augmented Generation (RAG) assistant built from scr
 ## Learning Progress
 
 - [x] Understanding RAG Fundamentals
-- [ ] Document Loading
-- [ ] Chunking
+- [x] Document Loading
+- [x] Chunking
 - [ ] Embeddings
 - [ ] Vector Database
 - [ ] Retrieval
