@@ -25,9 +25,9 @@ A production-style Retrieval-Augmented Generation (RAG) assistant built from scr
 - [x] Understanding RAG Fundamentals
 - [x] Document Loading
 - [x] Chunking
-- [ ] Embeddings
-- [ ] Vector Database
-- [ ] Retrieval
+- [x] Embeddings
+- [x] Vector Database
+- [x] Retrieval
 - [ ] Prompt Engineering
 - [ ] Basic RAG Pipeline
 - [ ] Hybrid Search

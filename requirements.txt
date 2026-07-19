@@ -3,3 +3,8 @@ langchain-community==0.3.29
 pypdf==6.1.1
 python-dotenv==1.1.1
 langchain-text-splitters==0.3.11
+langchain-huggingface
+sentence-transformers
+scikit-learn
+chromadb
+langchain-chroma
