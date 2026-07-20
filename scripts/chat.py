@@ -1,8 +1,9 @@
 from src.embeddings.embedding_model import get_embedding_model
 from src.vectorstore.chroma_store import load_vector_store
 from src.prompts.prompt_template import RAG_PROMPT
-from langchain_openai import ChatOpenAI
+#from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 def main():
     load_dotenv()
@@ -34,8 +35,8 @@ def main():
 
     #print(formatted_prompt)
 
-    llm= ChatOpenAI(
-        model= "gpt-4o-mini",
+    llm= ChatGoogleGenerativeAI(
+        model= "gemini-2.5-flash",
         temperature=0
     )
 

@@ -28,8 +28,8 @@ A production-style Retrieval-Augmented Generation (RAG) assistant built from scr
 - [x] Embeddings
 - [x] Vector Database
 - [x] Retrieval
-- [X] Prompt Engineering
-- [X] Basic RAG Pipeline
+- [x] Prompt Engineering
+- [x] Basic RAG Pipeline
 - [ ] Hybrid Search
 - [ ] Re-ranking
 - [ ] LangGraph Workflow
