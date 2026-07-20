@@ -8,3 +8,5 @@ sentence-transformers
 scikit-learn
 chromadb
 langchain-chroma
+langchain-openai
+python-dotenv

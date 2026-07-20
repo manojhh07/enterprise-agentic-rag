@@ -7,39 +7,26 @@ from src.vectorstore.chroma_store import load_vector_store
 
 def main():
 
-    #documents = load_pdf("data/employee_handbook.pdf")
+    print("Loading documents...")
 
-    # print("=" * 60)
-    # print(f"Total Documents : {len(documents)}")
-    # print("=" * 60)
+    documents = load_pdf("data/employee_handbook.pdf")
 
-    # chunks = split_documents(documents)
-    # print(f"Total Chunks {len(chunks)}") 
-    # print("=" * 60)
+    print(f"Loaded {len(documents)} pages.")
+
+    chunks = split_documents(documents)
+
+    print(f"Created {len(chunks)} chunks.")
 
     embedding_model = get_embedding_model()
 
-    #vector_store = create_vector_store(chunks, embedding_model)
-    vector_store = load_vector_store(embedding_model)
-
-    print("Vector Store Create Successfully ")
-
-    results = vector_store.similarity_search(
-        "How many casual leaves do employees receive?",
-        k=3
+    create_vector_store(
+        chunks,
+        embedding_model
     )
 
-    print(type(results))
-    print(len(results))
-    print(type(results[0]))
-    print(results[0])
-
-    
-
-
-
-    
+    print("Vector database created successfully.")
 
 
 if __name__ == "__main__":
     main()
+
